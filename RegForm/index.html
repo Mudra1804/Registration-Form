@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="registration-form">
+        <h1>Registration Form</h1>
+        <form action="#" method="post">
+            <p>Full Name:</p>
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            
+            <p>User Name:</p>
+            <input type="text" name="username" placeholder="User Name" required>
+            
+            <p>Email:</p>
+            <input type="email" name="email" placeholder="Email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" title="Enter a valid email address" required>
+            
+            <p>Password:</p>
+            <div class="password-container">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+                
+            </div>
+            
+            <button type="submit" class="register-btn">Register</button>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var toggleButton = document.getElementById("togglePassword");
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleButton.innerHTML = "Hide Password";
+            } else {
+                passwordField.type = "password";
+                toggleButton.innerHTML = "Show Password";
+            }
+        }
+    </script>
+</body>
+</html>

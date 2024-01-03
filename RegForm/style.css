@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #2c3e50; /* Dark background color */
+    color: #fff;
+    font-family: sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.registration-form {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(44, 62, 80, 0.9); /* Slightly transparent dark background for the form */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2); /* Transparent box shadow for a border effect */
+}
+
+.registration-form h1 {
+    font-size: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.registration-form p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.registration-form p strong {
+    font-weight: 700; /* Adjusted font weight for bolder text */
+}
+
+.registration-form input,
+.registration-form button {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.password-container {
+    position: relative;
+}
+
+#togglePassword {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.register-btn {
+    background-color: #2980b9; /* A nice dark blue color for the button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #27ae60; /* Dark green on hover */
+}
+
+/* Media Queries for Responsive Design */
+
+@media only screen and (max-width: 600px) {
+    .registration-form {
+        padding: 15px;
+    }
+
+    .registration-form h1 {
+        font-size: 24px;
+    }
+
+    .registration-form input,
+    .registration-form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    #togglePassword {
+        font-size: 10px;
+    }
+}
